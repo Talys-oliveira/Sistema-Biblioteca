@@ -1,5 +1,8 @@
 public class Main {
     public static void main(String[] args) {
+        // Testa a conexão com o PostgreSQL
+        ConexaoBD.conectar();
+
         Biblioteca biblioteca = new Biblioteca(5);
 
         ItemBiblioteca livro1 = new Livro(1, "Clean Code");
